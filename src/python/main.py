@@ -151,4 +151,4 @@ if __name__ == '__main__':
     model = Classifier().to(device)
     train, test = prepare_classifier_training_dataset()
     trained_model = train_model(train, test, model, tokenizer)
-    compute_password_scores(model, tokenizer)
+    compute_password_scores(trained_model, tokenizer)
